@@ -1,0 +1,18 @@
+//цвета
+$clr-black: #363636;
+$clr-white: #fff;
+$clr-blue: #0096ff;
+$clr-red: #f52d22;
+$clr-txt: $clr-black;
+$clr-bg-main: $clr-white;
+$clr-grey-bg: #ebebeb;
+
+//шрифты
+$font-main: 'Open Sans', sans-serif;
+
+//тени
+$bsh-main: 0 16px 136px rgba(176, 171, 171, .2);
+
+//градиент
+$blue-grd: linear-gradient(to bottom, #0096ff 0%, #045fe7 100%);
+$blue-grd-hover: linear-gradient(to bottom, #045fe7 0%, #0096ff 100%);

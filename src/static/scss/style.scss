@@ -1,0 +1,27 @@
+//библиотеки и плагины
+@import "vendors.scss";
+
+//шрифты
+@import "fonts.scss";
+
+//переменный и миксины
+@import "_vars.scss";
+@import "_mix.scss";
+
+//базовые глобальные стили
+@import "basic.scss";
+
+//глобальные модули
+@import "intro.scss";
+@import "header.scss";
+@import "footer.scss";
+
+//модули
+@import "main-sec.scss";
+@import "models.scss";
+@import "communication.scss";
+@import "protection.scss";
+@import "long-link.scss";
+@import "features.scss";
+@import "benefits.scss";
+@import "overview.scss";

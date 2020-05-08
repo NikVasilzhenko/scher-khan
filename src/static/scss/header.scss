@@ -1,0 +1,46 @@
+.mob-menu-overlay{
+  display: none;
+}
+.header-mob{
+  display: none;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 990;  
+  background-color: #1b232a;
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 73px;
+  }
+  &__close{display: none;}
+  &__btn{
+    width: 112px;
+    line-height: 33px;
+    height: 33px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.logo{
+  display: block;
+  width: 112px;
+}
+.main-menu{
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+      margin: 0 8px;
+      a{
+        color: $clr-white;
+        &:hover{color: $clr-red;}
+      }
+    }
+  }
+}

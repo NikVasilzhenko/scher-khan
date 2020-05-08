@@ -1,0 +1,19 @@
+/*intro*/
+.intro{
+  background: red;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  font-size: 20px;
+  color: #fff;
+  strong{text-transform: uppercase;}
+  a{
+    color: yellow;
+    text-decoration: underline;
+    &:hover{text-decoration: none;}
+  }
+}

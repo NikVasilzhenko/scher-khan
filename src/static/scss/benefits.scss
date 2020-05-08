@@ -1,0 +1,30 @@
+.benefits{
+  background: url(../img/pic/light-min.png) center 0  no-repeat #0046ad;
+  padding-top: 95px;
+  color: $clr-white;
+  text-align: center;
+  &__wrap{
+    margin: 0 auto;
+    max-width: 790px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.benefit{
+  width: 316px;
+  max-width: 45%;
+  margin: 95px 0 55px;
+  &__img{
+    height: 123px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__txt{
+    line-height: 24px;
+    letter-spacing: .4px;
+  }
+}
