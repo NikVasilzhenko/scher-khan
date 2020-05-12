@@ -5,3 +5,11 @@
   color: #fff;
   .logo{margin: 0 auto 20px;}
 }
+@media only screen and (max-width : 1200px){
+  .footer{
+    .logo{width: 112px;}
+  }
+}
+@media only screen and (max-width : 480px){
+  .footer{font-size: 14px;}
+}

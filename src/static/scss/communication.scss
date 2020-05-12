@@ -44,6 +44,7 @@
         height: 94px;
         line-height: 94px;
         text-align: center;
+        font-weight: 600;
         color: #fff;
         border-radius: 50%;
         font-size: 36px;
@@ -74,9 +75,12 @@
     background-color: #fff;
     overflow: hidden;
     position: relative;
+    visibility: visible !important;
     &_3{background: url(../img/pic/car-3-min.png) 0 0 no-repeat #fff;}
     &-left{
       position: absolute;
+      transform: translateX(-110%);
+      transition: transform .5s;
       &_1{
         width: 433px;
         left: 0;
@@ -96,6 +100,8 @@
     }
     &-right{
       position: absolute;
+      transform: translateX(110%);
+      transition: transform .5s;      
       &_1{
         right: 0;
         top: 0;
@@ -112,6 +118,12 @@
         top: auto;
         bottom: 0;
         width: 316px;
+      }
+    }
+    &.animated{
+      .communication-item__animate-left,
+      .communication-item__animate-right{
+        transform: translateX(0);
       }
     }
   }
@@ -132,5 +144,173 @@
     letter-spacing: .4px;
     .red{color: $clr-red;}
     .blue{color: $clr-blue;}
+  }
+}
+@media only screen and (max-width : 1200px){
+  .communication{
+    padding: 60px 0 100px;
+    &:before{
+      top: -150px;
+      margin-left: -700px;
+      width: 1505px;
+      height: 576px;
+    }    
+    &__subtitle{
+      margin-bottom: 74px;
+      font-size: 20px;
+    }
+    &__list{
+      li{
+        &:before {
+          top: 27px;
+          width: 76px;
+          height: 76px;
+          line-height: 76px;
+        }
+      }
+    }  
+  }
+  .communication-item{
+    margin-bottom: 70px;
+    &:nth-child(even){
+      &:before{right: 216px;}
+      .communication-item__main{padding-left: 30px;}
+    }
+    &:nth-child(odd){
+      .communication-item__main{padding-right: 30px;}
+    }
+    &__animate{
+      width: calc(100% - 324px);
+      height: 317px;
+      &_3{background-size: 497px auto;}
+      &-left{
+        &_1{width: 356px;}
+        &_2{width: 441px;}
+        &_3{width: 254px;}
+      }
+      &-right{
+        &_1{width: 424px;}
+        &_2{width: 314px;}
+        &_3{width: 259px;}
+      }
+    }
+    &__main{
+      width: 324px;
+      padding-top: 116px;
+    }
+    &__txt{
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+    &__small{line-height: 20px;}
+  }
+}
+@media only screen and (max-width : 992px){
+  .communication{
+    padding: 67px 0 103px;
+    &:before{
+      top: -80px;
+      margin-left: -520px;
+      width: 1057px;
+      height: 428px;
+    }    
+    &__title{margin-bottom: 16px;}
+    &__subtitle{font-size: 18px;}
+    &__list{
+      li{
+        &:before {top: 0;}
+      }
+    }  
+  }
+  .communication-item{
+    &:nth-child(even){
+      &:before{right: 156px;}
+      .communication-item__main{padding-left: 47px;}
+    }
+    &:nth-child(odd){
+      .communication-item__main{padding-right: 20px;}
+    }
+    &__animate{
+      width: 618px;
+      min-width: 618px;
+    }
+    &__main{
+      width: 284px;
+      min-width: 284px;
+      padding-top: 113px;
+    }
+    &__txt{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+    &__small{font-size: 14px;}
+  }
+}
+@media only screen and (max-width : 768px){
+  .communication{
+    padding: 53px 0 70px;
+    &:before{
+      top: -110px;
+      margin-left: -500px;
+    }    
+    &__title{margin-bottom: 16px;}
+    &__subtitle{margin-bottom: 93px;}
+    &__list{
+      li{
+        &:before {
+          top: -58px;
+          left: 50%;
+          line-height: 72px;
+          right: auto;
+          transform: translateX(-50%);
+          border: 4px solid #1b232a;
+          z-index: 5;
+        }
+      }
+    }  
+  }
+  .communication-item{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 106px;
+    &:nth-child(even){
+      flex-direction: column-reverse;
+      &:before{
+        right: auto;
+        left: 50%;
+      }
+      .communication-item__main{padding-left: 0;}
+    }
+    &:nth-child(odd){
+      &:before{left: 50%;}
+      .communication-item__main{padding-right: 0;}
+    }
+    &__animate{margin-bottom: 27px;}
+    &__main{
+      width: 100%;
+      padding-top: 0;
+      text-align: center;
+    }
+    &__txt{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &__small{font-size: 12px;}
+  }
+}
+@media only screen and (max-width : 480px){
+  .communication{
+    padding: 30px 0 60px;   
+    &__list{
+      li:before{
+        border-width: 9px;
+        line-height: 60px;
+        font-size: 29px;
+      }
+    }
+    &__title{margin-bottom: 10px;}
+    &__subtitle{font-size: 14px;}
   }
 }

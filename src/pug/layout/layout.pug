@@ -2,10 +2,11 @@
 html(lang="Ru-ru")
   head
     include ../global_modules/head
-  body
-    include ../global_modules/intro.html
-    include ../global_modules/header.html
-    main.main
-      block main
-    include ../global_modules/footer.html
+  body.block
+    .wrapper
+      include ../global_modules/intro.html
+      include ../global_modules/header.html
+      main.main
+        block main
+      include ../global_modules/footer.html
     include ../global_modules/scripts

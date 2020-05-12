@@ -28,3 +28,74 @@
     letter-spacing: .4px;
   }
 }
+@media only screen and (max-width : 1200px){
+  .benefits{
+    background-size: contain;
+    padding-top: 60px;
+    &__wrap{
+      max-width: 764px;
+      margin-top: 80px;
+    }
+  }
+  .benefit{
+    width: 290px;
+    margin: 0 0 127px;
+    &__img{
+      height: 105px;
+      margin-bottom: 30px;
+    }
+    &__txt{
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: .35px;
+    }
+  }
+}
+@media only screen and (max-width : 992px){
+  .benefits{
+    padding-top: 52px;
+    &__wrap{
+      max-width: 662px;
+      margin-top: 98px;
+    }
+  }
+  .benefit{width: 288px;}
+}
+@media only screen and (max-width : 768px){
+  .benefits{
+    padding: 56px 0 20px;
+    &__wrap{max-width: 452px;}
+  }
+  .benefit{
+    width: 210px;
+    margin: 0 0 55px;
+    &__img{
+      height: 82px;
+      margin-bottom: 25px;
+      img{max-height: 100%;}
+    }
+    &__txt{
+      font-size: 12px;
+      line-height: 16.56px;
+      letter-spacing: .36px;
+    }
+  }
+}
+@media only screen and (max-width : 480px){
+  .benefits{
+    padding: 40px 0 60px;
+    &__wrap{
+      display: block;
+      margin-top: 55px;
+    }
+  }
+  .benefit{
+    width: 100%;
+    max-width: 210px;
+    margin: 0 auto 66px;
+    &:last-child{margin-bottom: 0;}
+    &__img{
+      height: 87px;
+    }
+  }
+}

@@ -23,6 +23,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
+  &.block{overflow: hidden;}
 }
 
 /*clearfix*/
@@ -103,4 +104,27 @@ img{
   text-align: center;
   font-size: 36px;
   font-weight: 700;
+  span{white-space: nowrap;}
+}
+
+@media only screen and (max-width : 1200px){
+  .container{max-width: 1000px;}
+}
+@media only screen and (max-width : 992px){
+  .container{max-width: 780px;}
+  .sec-title{font-size: 28px;}
+}
+@media only screen and (max-width : 768px){
+  .container{
+    max-width: 470px;
+    padding: 0 15px;
+  }
+  .sec-title{font-size: 24px;}
+}
+@media only screen and (max-width : 480px){
+  .container{
+    max-width: 320px;
+    padding: 0 15px;
+  }
+  .sec-title{font-size: 18px;}
 }
