@@ -124,10 +124,9 @@
 }
 .box{
   position: absolute;
-  transition: transform 2.01s ease-in;
-  transform: translateX(-100vw) translate(-50%, -46%);
-  top: 50%;
-  left: 50%;
+  transition: left 2.01s ease-in;
+  top: -180px;
+  left: -2000px;
   width: 1200px;
   height: 840px;
   img{
@@ -140,7 +139,7 @@
   }
 }
 .ready{
-  .box{transform: translateX(0) translate(-50%, -46%);}
+  .box{left: -260px;}
   .main-sec-brelok{
     animation: shortUp .5s both;
     animation-delay: 2.01s;
@@ -156,7 +155,7 @@
 }
 .show{
   .box{
-    transform: translateX(0) translate(-50%, -46%);
+    left: -260px;
     animation-timing-function: ease-in;
   }
   .main-sec__left{
@@ -166,7 +165,7 @@
 }
 .hide{
   .box{
-    transform: translateX(100vw) translate(-50%, -46%);
+    left: 2000px;
     animation-timing-function: ease-out;
   }
   .main-sec__left{
@@ -311,7 +310,11 @@
   .box{
     width: 867px;
     height: 607px;
+    top: -120px;
   }
+  .show .box,
+  .ready .box{left: -200px;}
+  .hide .box {left: 2000px;}
 }
 @media only screen and (max-width : 768px){
   .main-sec{
